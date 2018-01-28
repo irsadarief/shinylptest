@@ -1,0 +1,9 @@
+{
+    "path" : "~/shinylptest",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
