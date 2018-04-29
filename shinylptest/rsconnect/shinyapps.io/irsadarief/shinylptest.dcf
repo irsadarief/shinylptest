@@ -1,0 +1,12 @@
+name: shinylptest
+title: shinylptest
+username:
+account: irsadarief
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 301179
+bundleId: 1279785
+url: https://irsadarief.shinyapps.io/shinylptest/
+when: 1521611260.52058
+asMultiple: FALSE
+asStatic: FALSE
