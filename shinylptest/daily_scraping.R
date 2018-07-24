@@ -88,12 +88,12 @@ for(i in 1:nrow(data_komoditas)){
 
 dbDisconnect(db)
 
-mydata <- fromJSON("https://api.happyfresh.com/api/stock_locations/401/products/search?q=terigu&corrections=true&popular=true&per_page=240")
-records <- vector("list", length = length(mydata$products))
-for(i in 1:length(mydata$products)){
-  nama_produk <- mydata$products[i][[1]]$name
-  harga <- mydata$products[i][[1]]$price
-  link<-str_c("http://www.klikindomaret.com",results[i] %>% html_attr("href"))
+mydata <- fromJSON("https://api.happyfresh.com/api/stock_locations/401/products/search?q=Mila Multipurpose Wheat Flour&corrections=true&popular=true&per_page=240")
+records <- vector("list", length = mydata$count)
+for(i in 1:mydata$count){
+  nama_produk <- mydata$products$name[i]
+  harga <- mydata$products$price[i]
+  link<-str_c("https://www.happyfresh.id/stores/carrefour/locations/401/products/",mydata$products$id[i])
   records[[i]] <- data_frame(nama = nama_produk,harga = harga,link=link)
 }
 

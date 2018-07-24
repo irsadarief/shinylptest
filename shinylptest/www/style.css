@@ -1,3 +1,11 @@
 #largedr .selectize-input { line-height: 100px; }
 #largedr .selectize-dropdown { line-height: 100px; }
 .form-group shiny-input-container { vertical-align : middle ; width: auto ; font-size: 100px;}
+#login_trigger {margin-left:20px}
+#logout_trigger {margin-left:20px}
+#login {width:100%}
+#signup_trigger {width:100%}
+.select2-choices {
+	width: 150%;
+	border-radius: 3px;
+}
